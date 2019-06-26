@@ -1,15 +1,17 @@
 const express = require('express');
 
-// const { errorHandler } = require('../middleware/index');
+const { errorHandler, User } = require('../middleware/index');
 
-// const auth = require('../controllers/auth');
+const auth = require('../controllers/auth');
+
+const models = { User };
 
 const routersInit = config => {
   const router = express();
 
-//   router.use('/auth', auth(models, { config }));
+  router.use('/auth', auth(models, { config }));
 
-//   router.use(errorHandler);
+  router.use(errorHandler);
   return router;
 };
 
