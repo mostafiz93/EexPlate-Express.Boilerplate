@@ -1,11 +1,6 @@
 {
-  "extends": [
-    "airbnb-base",
-    "plugin:ava/recommended"
-  ],
-  "plugins": [
-    "ava"
-  ],
+  "parser": "babel-eslint",
+  "extends": ["airbnb-base"],
   "rules": {
     "react/jsx-filename-extension": 0,
     "arrow-body-style": 0,
