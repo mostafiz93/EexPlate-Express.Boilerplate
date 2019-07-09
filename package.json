@@ -22,6 +22,7 @@
     "express": "~4.16.1",
     "express-jwt": "^5.3.1",
     "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
     "mongo-uri-builder": "^2.0.0",
     "mongoose": "^5.6.1",
     "morgan": "^1.9.1",
@@ -36,9 +37,9 @@
     "babel-eslint": "^10.0.2",
     "eslint": "^5.6.0",
     "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.14.0",
     "jsdoc": "^3.5.5",
-    "nodemon": "^1.18.4",
-    "prettier-eslint": "^9.0.0"
+    "nodemon": "^1.18.4"
   }
 }
