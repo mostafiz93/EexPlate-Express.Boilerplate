@@ -10,10 +10,10 @@ const { mongoManager } = require('./src/mongo/MongoManager');
 
 const logger = winston.createLogger({
   transports: [
-    // new (winston.transports.Console)(options.console),
+    new (winston.transports.Console),
     // new (winston.transports.File)(options.errorFile),
     // new (winston.transports.File)(options.file)
-    new (winston.transports.MongoDB)({ db: mongoManager.getMongoUrl() }),
+    // new (winston.transports.MongoDB)({ db: mongoManager.getMongoUrl() }),
   ],
   exitOnError: false, // do not exit on handled exceptions
 });
